@@ -2,6 +2,8 @@
 
 A Google Chrome extension which attempts to prevent the use of a mouse or touchpad on a web page, in order to encourage keyboard navigation testing.
 
+![mouse-block](https://user-images.githubusercontent.com/1349608/140497013-f7bca616-8382-4ee1-b75b-569ace38f8ca.gif)
+
 ## Download
 
 Clone the repository or download the latest [release](https://github.com/davidding/mouse-block/releases).
