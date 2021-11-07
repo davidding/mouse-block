@@ -1,10 +1,9 @@
 {
   "name": "Mouse Block",
   "description": "Prevents use of a mouse or touchpad, to encourage testing keyboard navigation.",
-  "version": "1.0",
+  "version": "1.0.1",
   "manifest_version": 3,
   "permissions": [
-    "tabs",
     "storage",
     "scripting",
     "webNavigation"
