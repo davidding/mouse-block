@@ -1,4 +1,4 @@
-const STORAGE_KEY = "mouseBlockEnabled";
+const STORAGE_KEY = "mouse-block-enabled-7874031313"; // must be unique to extension and match contest.js
 
 /**
  * See https://developer.chrome.com/docs/extensions/reference/tabs/#type-Tab

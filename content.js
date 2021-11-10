@@ -1,6 +1,6 @@
 (function() {
-  const STORAGE_KEY = "mouseBlockEnabled"; // match background.js
-  const LAYER_ID = "mouse-block-9474875377";
+  const STORAGE_KEY = "mouse-block-enabled-7874031313"; // must be unique to extension and match background.js
+  const LAYER_ID = "mouse-block-9474875377"; // must be unique to extension
   const LAYER_CSS = `position: fixed !important;
     inset: 0 !important;
     padding: 0 !important;
@@ -18,12 +18,23 @@
   };
 
   /**
+   * @param {string} id
    * @returns {HTMLElement}
    */
-  const createLayer = () => {
+  const createLayer = (id) => {
     const layer = document.createElement("div");
-    layer.id = LAYER_ID;
-    layer.style.cssText = LAYER_CSS;
+    layer.id = id;
+
+    layer.insertAdjacentHTML('afterbegin', `<style>
+      #${id} {
+        ${LAYER_CSS}
+      }
+
+      #${id} ~ * {
+        z-index: 0 !important;
+      }
+    </style>`);
+
     layer.onclick = blockEvent;
     layer.oncontextmenu = blockEvent;
     layer.onmousedown = blockEvent;
@@ -34,20 +45,17 @@
   };
 
   /**
+   * @param {string} id
    * @returns {HTMLElement}
    */
-  const getLayer = () => {
-    return document.getElementById(LAYER_ID) || createLayer();
-  }
+  const getLayer = (id) => document.getElementById(id) || createLayer(id);
 
   /**
    *
    * @param {HTMLElement} layer
    * @returns {boolean}
    */
-  const isLayerActive = (layer) => {
-    return document.body.contains(layer);
-  };
+  const isLayerActive = (layer) => document.body.contains(layer);
 
   /**
    * @param {HTMLElement} layer
@@ -73,7 +81,7 @@
   };
 
   chrome.storage.local.get(STORAGE_KEY, (result) => {
-    const layer = getLayer();
+    const layer = getLayer(LAYER_ID);
     toggleLayer(layer, result[STORAGE_KEY]);
   });
 }());
