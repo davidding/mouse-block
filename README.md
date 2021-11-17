@@ -4,11 +4,19 @@ A Google Chrome extension which attempts to prevent the use of a mouse or touchp
 
 ![mouse-block](https://user-images.githubusercontent.com/1349608/140497013-f7bca616-8382-4ee1-b75b-569ace38f8ca.gif)
 
-## Download
+## Add to Chrome
+
+### Official Release
+
+Add via the [chrome web store](https://chrome.google.com/webstore/detail/mouse-block/nkfiomgpfbobpngnmdopiihhnlilbmca).
+
+### Developer Mode
+
+#### Download
 
 Clone the repository or download the latest [release](https://github.com/davidding/mouse-block/releases).
 
-## Install
+#### Install
 
 (Copied from [Chrome Developers > Documentation > Extensions > Getting started](https://developer.chrome.com/docs/extensions/mv3/getstarted/))
 
