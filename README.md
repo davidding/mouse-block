@@ -23,3 +23,8 @@ Clone the repository or download the latest [release](https://github.com/daviddi
 - Source: [Cursor not allowed Icon](https://icon-icons.com/icon/cursor-not-allowed/100169)
 - Creator: [Luc Chaissac](https://www.lucchaissac.com/)
 - Licence: [CC Attribution](https://creativecommons.org/licenses/by/4.0/)
+
+## Related
+
+- [Vision Block](https://github.com/davidding/vision-block): a similar Chrome extension for screen reader testing.
+- [Layer Toggle](https://github.com/davidding/layer-toggle): a template repository for layer-toggling Chrome extensions.
