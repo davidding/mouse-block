@@ -8,7 +8,7 @@ A Google Chrome extension which attempts to prevent the use of a mouse or touchp
 
 ### Official Release
 
-Add via the [chrome web store](https://chrome.google.com/webstore/detail/mouse-block/nkfiomgpfbobpngnmdopiihhnlilbmca).
+Add via the [Chrome Web Store](https://chrome.google.com/webstore/detail/mouse-block/nkfiomgpfbobpngnmdopiihhnlilbmca).
 
 ### Developer Mode
 
